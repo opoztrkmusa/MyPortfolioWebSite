@@ -1,0 +1,466 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>B. Musa Öpöztürk</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CUSTOM FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        body {
+            background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+
+         url(bg.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            backdrop-filter: blur(3px);
+            opacity: 2;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            font-family: "Inter";
+        }
+
+        meter::-webkit-meter-optimum-value {
+            background: yellow;
+        }
+        input::placeholder {
+            color: #fff;
+        } 
+
+        textarea::placeholder {
+            color: #fff;
+        } 
+        .Eye:hover {
+            color: transparent;
+            cursor: crosshair;
+        }
+        .Eye:hover::before {
+            content: "👁️‍🗨️";
+            color: #fff;
+            transition: 1s ease;
+            margin-right: -2.55rem;
+        }
+        .fa-instagram:hover {
+            color: rgb(225 ,48 ,108);
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="text-white flex justify-between py-4 px-12 items-center" style="backdrop-filter: blur(5px);">
+
+        <div class="flex text-2xl font-medium">
+            <a href="#" class="hover:rotate-[15deg] transition-all duration-300">Portfolio</a>
+        </div>
+        <nav class="sm:flex hidden space-x-8">
+            <a href="#home"
+                class="text-sm hover:text-yellow-400 transition-all duration-300 hover:translate-x-1 hover:translate-y-1">Home</a>
+            <a href="#skills"
+                class="text-sm hover:text-yellow-400 transition-all duration-300 hover:translate-x-1 hover:translate-y-1">Skills</a>
+            <a href="#project"
+                class="text-sm hover:text-yellow-400 transition-all duration-300 hover:translate-x-1 hover:translate-y-1">Project</a>
+            <a href="#contact"
+                class="text-sm hover:text-yellow-400 transition-all duration-300 hover:translate-x-1 hover:translate-y-1">Contact</a>
+        </nav>
+        <a href="#" class="block sm:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+
+    <!-- About Side -->
+    <section class="my-32 px-24 max-md:px-0 flex flex-row flex-wrap justify-stretch items-center max-md:gap-y-12">
+
+        <!-- Left Side -->
+        <div class="md:w-1/2 px-12 text-yellow-100 flex py-auto">
+            <div class="spacing-y-6 md:text-left text-center">
+                <h4 class="text-5xl md:text-left text-center">Hello, <span class="text-yellow-400">I'm</span></h4>
+                <span class="text-6xl font-Poppins font-semibold text-yellow-300">Berat Musa Öpöztürk;</span>
+                <p class="text-xl md:text-left text-center w-11/12 leading-7 mt-6 font-Poppins">My goal is to become a front-end developer. Like everyone, I have dreams. Once JavaScript is done, the real fun begins! 🙂 </p>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="md:w-1/2 px-12 order-first md:order-none mx-auto">
+            <div class="ml-auto rounded-full flex justify-center items-center  bg-yellow-400" style="width: 250px; height: 250px;">
+                <span class="text-7xl font-Inter font-extrabold">JS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="my-32 py-12 px-12" id="skills">
+        <div class="flex py-4 items-center" style="border-bottom: 1px solid orange;">
+            <h1 class="text-3xl font-bold text-orange-400">My Skills</h1>
+
+        </div>
+        <div class="my-8 flex flex-col whitespace-nowrap text-5xl gap-y-12 gap-x-12">
+            <div>
+                <label for="html">
+                    <i class="fa-brands fa-html5 text-red-500" title="HTML"></i>
+                </label>
+
+                <meter id="html" value="10" min="0" max="10" class="w-10/12"></meter>
+            </div>
+
+            <div>
+                <label for="css">
+                    <i class="fa-brands fa-css3 text-red-500" title="CSS"></i>
+                </label>
+                <meter id="css" value="11" min="0" max="11" class="w-10/12"></meter>
+            </div>
+
+            <div>
+                <label for="css">
+                    <i class="fa-brands fa-node-js text-red-500" title="JAVASCRİPT"></i>
+                </label>
+                <meter id="css" value="5" min="0" max="11" class="w-10/12"></meter>
+            </div>
+
+            <div>
+                <label for="php">
+                    <i class="fa-brands fa-php text-red-500" title="PHP"></i>
+                </label>
+                <meter id="php" value="0" min="0" max="11" class="w-10/12"></meter>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Repositories Section -->
+    <section class="my-32 py-12 px-12" id="project">
+        <div class="flex py-4 items-center" style="border-bottom: 1px solid orange;">
+            <h1 class="text-3xl font-bold text-orange-400">My Repositories</h1>
+
+        </div>
+        <div class="">
+            <!-- My Repositories-->
+            <div class="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-x-8 gap-y-6 text-center text-yellow-400">
+     <!-- CARD -->
+
+                <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
+                    <div> <a href="https://github.com/berat566/Twitter-clone" target="_blank" class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap" id="twitter-clone">twitter-clone-with-tailwind-css</a>
+                    </div>
+
+
+                    <div class="flex py-4 text-3xl pt-12 gap-x-12 items-center justify-center">
+                        <div class="flex items-center gap-x-2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-yellow-400"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>
+                            <span class="text-yellow-400">0</span>
+                        </div>
+
+
+                        <div class="flex items-center gap-x-2">
+                            <svg class="text-blue-500" stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <desc></desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="18" r="2"></circle>
+                                <circle cx="7" cy="6" r="2"></circle>
+                                <circle cx="17" cy="6" r="2"></circle>
+                                <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
+                                <line x1="12" y1="12" x2="12" y2="16"></line>
+                            </svg>
+                            <span>0</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
+
+                    <div> <a href="#"
+                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">--------------------------</a>
+                    </div>
+
+
+                    <div class="flex py-4 text-3xl pt-12 gap-x-12 items-center justify-center">
+                        <div class="flex items-center gap-x-2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-yellow-400"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>
+                            <span class="text-yellow-400">?</span>
+                        </div>
+
+
+                        <div class="flex items-center gap-x-2">
+                            <svg class="text-blue-500" stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <desc></desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="18" r="2"></circle>
+                                <circle cx="7" cy="6" r="2"></circle>
+                                <circle cx="17" cy="6" r="2"></circle>
+                                <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
+                                <line x1="12" y1="12" x2="12" y2="16"></line>
+                            </svg>
+                            <span>?</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
+                    <div> <a href="#"
+                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">--------------------------</a>
+                    </div>
+
+
+                    <div class="flex py-4 text-3xl pt-12 gap-x-12 items-center justify-center">
+                        <div class="flex items-center gap-x-2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-yellow-400"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>
+                            <span class="text-yellow-400">?</span>
+                        </div>
+
+
+                        <div class="flex items-center gap-x-2">
+                            <svg class="text-blue-500" stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <desc></desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="18" r="2"></circle>
+                                <circle cx="7" cy="6" r="2"></circle>
+                                <circle cx="17" cy="6" r="2"></circle>
+                                <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
+                                <line x1="12" y1="12" x2="12" y2="16"></line>
+                            </svg>
+                            <span>?</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
+                    <div> <a href="#"
+                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">--------------------------</a>
+                    </div>
+
+
+                    <div class="flex py-4 text-3xl pt-12 gap-x-12 items-center justify-center">
+                        <div class="flex items-center gap-x-2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-yellow-400"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>
+                            <span class="text-yellow-400">?</span>
+                        </div>
+
+
+                        <div class="flex items-center gap-x-2">
+                            <svg class="text-blue-500" stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <desc></desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="18" r="2"></circle>
+                                <circle cx="7" cy="6" r="2"></circle>
+                                <circle cx="17" cy="6" r="2"></circle>
+                                <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
+                                <line x1="12" y1="12" x2="12" y2="16"></line>
+                            </svg>
+                            <span>?</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
+                    <div> <a href="#"
+                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">--------------------------</a>
+                    </div>
+
+
+                    <div class="flex py-4 text-3xl pt-12 gap-x-12 items-center justify-center">
+                        <div class="flex items-center gap-x-2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-yellow-400"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>
+                            <span class="text-yellow-400">?</span>
+                        </div>
+
+
+                        <div class="flex items-center gap-x-2">
+                            <svg class="text-blue-500" stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <desc></desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="18" r="2"></circle>
+                                <circle cx="7" cy="6" r="2"></circle>
+                                <circle cx="17" cy="6" r="2"></circle>
+                                <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
+                                <line x1="12" y1="12" x2="12" y2="16"></line>
+                            </svg>
+                            <span>?</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover: transition duration-700">
+                    <div> <a href="#"
+                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">--------------------------</a>
+                    </div>
+
+
+                    <div class="flex py-4 text-3xl pt-12 gap-x-12 items-center justify-center">
+                        <div class="flex items-center gap-x-2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-yellow-400"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>
+                            <span class="text-yellow-400">?</span>
+                        </div>
+
+
+                        <div class="flex items-center gap-x-2">
+                            <svg class="text-blue-500" stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <desc></desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="18" r="2"></circle>
+                                <circle cx="7" cy="6" r="2"></circle>
+                                <circle cx="17" cy="6" r="2"></circle>
+                                <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
+                                <line x1="12" y1="12" x2="12" y2="16"></line>
+                            </svg>
+                            <span>?</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="my-32 py-12 px-12 text-3xl" id="contact">
+        <div class="flex py-4 items-center" style="border-bottom: 1px solid orange;">
+            <h1 class="text-3xl font-bold text-orange-400">Contact Me</h1>
+             </div>
+            <!-- İnput Section -->
+            
+            <div class="flex flex-col gap-y-12 py-6">
+                <div class="flex sm:flex-row w-1/2 flex-col md:gap-y-0 gap-y-12 gap-x-12 text-yellow-400 placeholder:text-yellow-600">
+                <div class="flex flex-col">
+                    <label for="" class="">Name <span class="text-red-500">&nbsp; *</span></label>
+                    <input type="text" placeholder="Name" class="bg-transparent outline-none px-2 py-2 my-4 border border-red-500 shadow-2xl rounded-xl placeholder:text-lg text-lg transition-all duration-500">
+                </div>
+
+                <div class="flex flex-col whitespace-nowrap">
+                    <label for="" class="">Last Name <span class="text-red-500">&nbsp; *</span></label>
+                    <input type="text" placeholder="Last Name" class="bg-transparent outline-none px-2 py-2 my-4 border border-red-500 shadow-2xl rounded-xl placeholder:text-lg text-lg transition-all duration-500">
+                </div>
+            </div>
+
+
+            <div class="flex flex-col gap-y-12">
+                <div class="flex-col text-yellow-400">
+                    <label for="">E-Mail<span class="text-red-500">&nbsp; *</span></label>
+                    <input type="email" placeholder="E-Mail" class="block my-4 bg-transparent outline-none px-2 py-2 border border-red-500 shadow-2xl rounded-xl placeholder:text-lg text-lg transition-all duration-500">
+                </div>
+
+                <div class="flex flex-col text-yellow-400">
+                    <label for="">Subject<span class="text-red-500">&nbsp; *</span></label>
+                   <textarea name="" id="" cols="25" rows="4" placeholder="Yes what is the problem?" class="bg-transparent outline-none px-2 py-2 my-4 border border-red-500 shadow-2xl rounded-xl placeholder:text-xl text-lg"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Send (Not Working)" class="px-4 py-2 border border-red-500 text-yellow-400 text-xl cursor-not-allowed rounded-xl">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-5 px-12 text-3xl text-white flex md:flex-row max-md:gap-y-12 flex-col justify-between">
+        <!-- Logo -->
+        <div class="max-sm:order-3">
+            <button class="Eye">👁️</button>
+        </div>
+
+        <!-- CopyRight -->
+        <span class="text-lg font-bold whitespace-nowrap">Bu Proje Berat.js tarafından yapılmıştır :)</span>
+        <!-- Social -->
+       <nav class="text-3xl flex space-x-4 max-sm:order-first max-sm:gap-x-6">
+    <a href="https://www.instagram.com/berat.webdev/" target="_blank"><i class="fa-brands fa-instagram text-gray-400 transition duration-200"></i></a>
+    <a href="https://github.com/Berat566" target="_blank"><i class="fa-brands fa-github text-gray-400 hover:text-[#171515] transition duration-200"></i></a>
+    <a href="https://twitter.com/Berat_webdev" target="_blank"><i class="fa-brands fa-twitter text-gray-400 hover:text-[#00aced] transition duration-200"></i></a>
+    <a href="https://open.spotify.com/user/316irvz2mnd5zrkh2vslriflhl6i" target="_blank"><i class="fa-brands fa-spotify text-gray-400 hover:text-[#2ebd59] transition duration-200"></i></a>
+    <a href="https://discord.com/users/792295167700107294" target="_blank"><i class="fa-brands fa-discord text-gray-400 hover:text-[#7289DA] transition duration-200"></i></a>
+</nav>
+    </footer>
+
+ 
+</body>
+
+
+</html>
