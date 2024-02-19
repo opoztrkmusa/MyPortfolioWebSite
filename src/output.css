@@ -919,6 +919,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -929,14 +933,6 @@ video {
 
 .duration-700 {
   transition-duration: 700ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .placeholder\:text-lg::-moz-placeholder {
