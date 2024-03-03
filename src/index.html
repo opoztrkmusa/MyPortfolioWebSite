@@ -32,34 +32,39 @@
     margin: 0;
     padding: 0;
 }
-/* Kaydırma çubuğu için */
-::-webkit-scrollbar {
-    width: 8px;
-    scroll-behavior: smooth; /* Geçiş efekti */
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-/* Kaydırma çubuğu */
-::-webkit-scrollbar-thumb {
-    background-color: #FDE047; /* Sarı tonu (yellow-500) */
-    border-radius: 10px;
-    border: 2px solid #FDE047; /* Aynı ton bir sınır */
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #4d7fff 0%, #1a56ff 100%);
+  border-radius: 5px;
 }
 
-/* Kaydırma çubuğu üzerine gelindiğinde */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #FACC15; /* Sarının bir ton daha koyusu */
+body::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border: 1px solid #ccc;
 }
 
-/* Kaydırma çubuğu izdüşümü */
-::-webkit-scrollbar-track {
-    background-color: #F3F4F6; /* Arkaplan rengi */
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+body::-webkit-scrollbar-button {
+  background-color: #4d7fff;
+  border-radius: 5px;
 }
-/* Kaydırma çubuğu için */
 
-
-
+@keyframes scale-a-lil {
+  from {
+    scale: .5;
+  }
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+  figure img {
+    animation: scale-a-lil linear both;
+    animation-timeline: view();
+    animation-range: 25vh 75vh;
+  }
+}
         
 
         meter::-webkit-meter-optimum-value {
@@ -264,8 +269,9 @@
                 </div>
 
                 <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
-                    <div> <a href="#"
-                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">--------------------------</a>
+                    <div> 
+                        <a href="#"
+                            class="text-[20px] max-md:text-[17px] font-bold whitespace-nowrap">Hosting Website(UI Design)</a>
                     </div>
 
 
@@ -277,7 +283,7 @@
                                     d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
                                 </path>
                             </svg>
-                            <span class="text-yellow-400">?</span>
+                            <span class="text-yellow-400">0</span>
                         </div>
 
 
@@ -293,7 +299,7 @@
                                 <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2"></path>
                                 <line x1="12" y1="12" x2="12" y2="16"></line>
                             </svg>
-                            <span>?</span>
+                            <span>0</span>
                         </div>
 
 
