@@ -81,6 +81,12 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
        }
 
+       #tailwind {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(90%) saturate(7499%) hue-rotate(359deg) brightness(107%) contrast(91%);
+  fill: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+
     </style>
 
 </head>
@@ -136,7 +142,7 @@ body::-webkit-scrollbar-thumb {
 
         </div>
         <div class="my-8 flex flex-col whitespace-nowrap text-6xl gap-y-12 justify-center">
-            <div class="flex items-center gap-x-7">
+            <div class="flex items-center gap-x-8">
                 <label for="html">
                     <i class="fa-brands fa-html5 text-red-500" title="HTML"></i>
                 </label>
@@ -144,7 +150,7 @@ body::-webkit-scrollbar-thumb {
                 <meter id="html" value="10" min="0" max="10" class="w-10/12"></meter>
             </div>
 
-            <div class="flex items-center gap-x-4">
+            <div class="flex items-center gap-x-6">
                 <label for="css">
                     <i class="fa-brands fa-css3 text-red-500" title="CSS"></i>
                 </label>
@@ -153,16 +159,17 @@ body::-webkit-scrollbar-thumb {
 
             <div class="flex items-center gap-x-7">
                 <label for="js">
-                    <i class="fa-brands fa-node-js text-red-500" title="JAVASCRİPT"></i>
+                    
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042" class="text-red-500 w-[60px]" id="tailwind" alt="" title="Tailwindcss">
                 </label>
-                <meter id="js" value="7" min="0" max="11" class="w-10/12"></meter>
+                <meter id="js" value="11" min="0" max="11" class="w-10/12"></meter>
             </div>
 
-            <div class="flex items-center gap-x-3">
+            <div class="flex items-center gap-x-9">
                 <label for="php">
-                    <i class="fa-brands fa-php text-red-500" title="PHP"></i>
+                    <i class="fa-brands fa-node-js text-red-500" title="JAVASCRİPT"></i>
                 </label>
-                <meter id="php" value="0" min="0" max="11" class="w-10/12"></meter>
+                <meter id="php" value="8" min="0" max="11" class="w-10/12"></meter>
             </div>
 
         </div>
