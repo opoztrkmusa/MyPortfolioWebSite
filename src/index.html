@@ -23,7 +23,7 @@
 
   body {
     background: /* top, transparent black, faked with gradient */ linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
-    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKQ6_sjYJuTRKvRlaj3hDsD-8rAHqYZQOZZQ2MX1EmrPTYDdhUBnw-&usqp=CAE&s) no-repeat center center fixed;
+    url(https://i.gifer.com/origin/3e/3ed745e14423d28ea25b5770489b3878_w200.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,38 +40,16 @@
       background-color: transparent; /* Opsiyonel: Sayfa arkaplan rengi */
     }
 body::-webkit-scrollbar {
-  width: 10px;
   height: 10px;
+  background: black;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom right, #4d7fff 0%, #1a56ff 100%);
-  border-radius: 5px;
+  background: linear-gradient(to bottom right, yellow 0%, yellow 100%);
+  border-radius: 10rem;
 }
 
-body::-webkit-scrollbar-track {
-  background-color: #ddd;
-  border: 1px solid #ccc;
-}
 
-body::-webkit-scrollbar-button {
-  background-color: #4d7fff;
-  border-radius: 5px;
-}
-
-@keyframes scale-a-lil {
-  from {
-    scale: .5;
-  }
-}
-  
-@media (prefers-reduced-motion: no-preference) {
-  figure img {
-    animation: scale-a-lil linear both;
-    animation-timeline: view();
-    animation-range: 25vh 75vh;
-  }
-}
         
 
         meter::-webkit-meter-optimum-value {
@@ -99,6 +77,9 @@ body::-webkit-scrollbar-button {
 
         }
     
+       #skills i {
+        text-align: center;
+       }
 
     </style>
 
@@ -154,8 +135,8 @@ body::-webkit-scrollbar-button {
             <h1 class="text-3xl font-bold text-orange-400">My Skills</h1>
 
         </div>
-        <div class="my-8 flex flex-col whitespace-nowrap text-5xl gap-y-12 gap-x-12">
-            <div>
+        <div class="my-8 flex flex-col whitespace-nowrap text-6xl gap-y-12 justify-center">
+            <div class="text-center">
                 <label for="html">
                     <i class="fa-brands fa-html5 text-red-500" title="HTML"></i>
                 </label>
@@ -163,21 +144,21 @@ body::-webkit-scrollbar-button {
                 <meter id="html" value="10" min="0" max="10" class="w-10/12"></meter>
             </div>
 
-            <div>
+            <div class="text-center">
                 <label for="css">
                     <i class="fa-brands fa-css3 text-red-500" title="CSS"></i>
                 </label>
                 <meter id="css" value="11" min="0" max="11" class="w-10/12"></meter>
             </div>
 
-            <div>
-                <label for="css">
+            <div class="text-center">
+                <label for="js">
                     <i class="fa-brands fa-node-js text-red-500" title="JAVASCRİPT"></i>
                 </label>
-                <meter id="css" value="7" min="0" max="11" class="w-10/12"></meter>
+                <meter id="js" value="7" min="0" max="11" class="w-10/12"></meter>
             </div>
 
-            <div>
+            <div class="text-center">
                 <label for="php">
                     <i class="fa-brands fa-php text-red-500" title="PHP"></i>
                 </label>
