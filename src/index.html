@@ -35,11 +35,6 @@
 }
 .page-wrapper {
       max-width: 1700px; /* Maksimum genişlik belirleyebilirsiniz */
-      position: fixed;
-      opacity: 0;
-      top: -40px;
-      
-      transition: top 0.7s ease;
       margin: 0 auto; /* Sayfayı ortalamak için otomatik kenar boşluğu */
       padding: 20px; /* İçeriğin kenarlardan uzaklığı */
       background-color: transparent; /* Opsiyonel: Sayfa arkaplan rengi */
@@ -98,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 
 <body>
 
-    <div class="page-wrapper" id="page-wrapper">
+    <div class="page-wrapper">
     <!-- Header Section -->
     <header class="text-white flex justify-between py-4 px-12 items-center font-Inter" style="backdrop-filter: blur(5px);">
 
@@ -272,7 +267,7 @@ body::-webkit-scrollbar-thumb {
                 <div class="div-repositories px-12 py-12 my-12 shadow-2xl bg-transparent shadow-yellow-400 rounded-xl hover:backdrop-blur-none transition duration-700">
                     <div> 
                         <a href="#"
-                            class="text-[20px] max-md:text-[15px] font-bold whitespace-nowrap " translate="no">Hosting Website(UI Design)</a>
+                            class="text-[20px] max-md:text-[15px] font-bold whitespace-nowrap" translate="no">Hosting Website(UI Design)</a>
                     </div>
 
 
@@ -489,8 +484,6 @@ body::-webkit-scrollbar-thumb {
     </footer>
 </div>
  
-
-<script src="app.js"></script>
 </body>
 
 
