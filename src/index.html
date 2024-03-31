@@ -17,11 +17,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <style>
     
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-  body {
+  .body {
     background: /* top, transparent black, faked with gradient */ linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
     url(https://i.gifer.com/origin/3e/3ed745e14423d28ea25b5770489b3878_w200.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -33,10 +34,10 @@
     margin: 0;
     padding: 0;
 }
+
 .page-wrapper {
       max-width: 1700px; /* Maksimum genişlik belirleyebilirsiniz */
-      margin: 0 auto; /* Sayfayı ortalamak için otomatik kenar boşluğu */
-      padding: 20px; /* İçeriğin kenarlardan uzaklığı */
+      margin: 0 auto; /* Sayfayı ortalamak için otomatik kenar boşluğu */ /* İçeriğin kenarlardan uzaklığı */
       background-color: transparent; /* Opsiyonel: Sayfa arkaplan rengi */
     }
 body::-webkit-scrollbar {
@@ -85,6 +86,34 @@ body::-webkit-scrollbar-thumb {
   filter: brightness(0) saturate(100%) invert(13%) sepia(90%) saturate(7499%) hue-rotate(359deg) brightness(107%) contrast(91%);
   fill: rgb(239 68 68 / var(--tw-text-opacity));
 }
+.text {
+            width: auto;
+            min-width: 2px;
+            height: 70px;
+            font-size: 50px;
+            position: relative;
+            
+        }
+.text::after {
+            width: 2px;
+            height: 80%;
+            position: absolute;
+            top: 10px;
+            right: -5px;
+            content: "";
+            background-color: orange;
+            animation: animation 1s infinite alternate ease-in-out;
+        }
+        @keyframes animation {
+            0% {
+                height: 80%;
+                top: 5px;
+            }            
+            100% {
+                height: 20%;
+                top: 30px;
+            }
+        }
 
 
     </style>
@@ -95,12 +124,12 @@ body::-webkit-scrollbar-thumb {
 
     <div class="page-wrapper">
     <!-- Header Section -->
-    <header class="text-white flex justify-between py-4 px-12 items-center font-Inter" style="backdrop-filter: blur(5px);">
+    <header class="text-white flex justify-between py-4 px-12 max-lg:px-10 items-center font-Inter" style="backdrop-filter: blur(5px);">
 
         <div class="flex text-2xl font-medium">
             <a href="#" class="hover:rotate-[15deg] transition-all duration-300">Portfolio</a>
         </div>
-        <nav class="sm:flex hidden space-x-8">
+        <nav class="max-sm:hidden flex space-x-8">
             <a href="#home"
                 class="text-sm hover:text-yellow-400 transition-all duration-300 hover:translate-x-1 hover:translate-y-1">Home</a>
             <a href="#skills"
@@ -110,10 +139,26 @@ body::-webkit-scrollbar-thumb {
             <a href="#contact"
                 class="text-sm hover:text-yellow-400 transition-all duration-300 hover:translate-x-1 hover:translate-y-1">Contact</a>
         </nav>
-        <a href="#" class="block sm:hidden text-2xl">
-            <i class="fa-solid fa-bars"></i>
-        </a>
+        <div class="hidden max-sm:flex transition-all duration-500">
+            <i class="fa-solid fa-bars cursor-pointer" id="bars"></i>
+            <i class="hidden transition-all duration-500 fa-solid fa-x cursor-pointer" id="x"></i>
+        </div>
     </header>
+
+    <nav class="hidden max-sm:flex flex-col h-[60vh] px-0 bg-yellow-700 backdrop-blur-sm transition-all duration-500 w-1/4 absolute -left-64" id="navbar-responsive">
+
+        <a href="#home" class="flex justify-center items-center h-[15vh] text-white text-center border-yellow-500 py-2 hover:bg-white hover:text-yellow-700 transition-all duration-300">
+            Home</a>
+        <a href="#skills" class="flex justify-center items-center h-[15vh] text-white border-yellow-500 py-2 hover:bg-white hover:text-yellow-700 transition-all duration-300">Anasayfa</a>
+    
+        <a href="#project" class="flex justify-center items-center h-[15vh] text-white border-yellow-500 py-2 hover:bg-white hover:text-yellow-700 transition-all duration-300">Anasayfa</a>
+    
+        <a href="#contact" class="flex justify-center items-center h-[15vh] text-white border-yellow-500 py-2 hover:bg-white hover:text-yellow-700 transition-all duration-300">Anasayfa</a>
+    
+
+    
+     </nav>
+
 
     <!-- About Side -->
     <section class="my-32 px-24 max-md:px-0 flex flex-row flex-wrap justify-stretch items-center max-md:gap-y-12">
@@ -121,8 +166,8 @@ body::-webkit-scrollbar-thumb {
         <!-- Left Side -->
         <div class="md:w-1/2 px-12 text-yellow-100 flex py-auto">
             <div class="spacing-y-6 md:text-left text-center max-sm:-ml-4">
-                <h4 class="text-5xl md:text-left text-center">Hello, <span class="text-yellow-400">I'm</span></h4>
-                <span class="text-6xl font-Poppins font-semibold text-yellow-300">Berat Musa Öpöztürk;</span>
+                <h4 class="text-2xl md:text-left text-center">Hello, <span class="text-yellow-400">I'm</span></h4>
+                <span class="text-3xl font-Poppins font-semibold text-yellow-300 text">   </span>
                 <p class="text-xl md:text-left text-center w-11/12 leading-7 mt-6 font-Poppins">My goal is to become a front-end developer. Like everyone, I have dreams. Once JavaScript is done, the real fun begins! 🙂 </p>
             </div>
 
@@ -468,14 +513,14 @@ body::-webkit-scrollbar-thumb {
     <!-- Footer Section -->
     <footer class="py-5 px-12 text-3xl text-white flex md:flex-row max-md:gap-y-12 flex-col justify-between">
         <!-- Logo -->
-        <div class="max-sm:order-3">
+        <div class="max-sm:order-3 max-lg:text-xl">
             <button class="Eye">👁️</button>
         </div>
 
         <!-- CopyRight -->
-        <span class="text-lg font-bold whitespace-nowrap">Bu Proje Berat.js tarafından yapılmıştır :)</span>
+        <span class="text-lg font-bold whitespace-nowrap max-lg:text-sm">Bu Proje Berat.js tarafından yapılmıştır :)</span>
         <!-- Social -->
-       <nav class="text-3xl flex space-x-4 max-sm:order-first max-sm:gap-x-6">
+       <nav class="text-3xl max-lg:text-lg flex space-x-3 max-sm:order-first max-sm:gap-x-2">
     <a href="https://www.instagram.com/berat.webdev/" target="_blank"><i class="fa-brands fa-instagram text-gray-400 transition duration-200"></i></a>
     <a href="https://github.com/Berat566" target="_blank"><i class="fa-brands fa-github text-gray-400 hover:text-[#171515] transition duration-200"></i></a>
     <a href="https://twitter.com/Berat_webdev" target="_blank"><i class="fa-brands fa-twitter text-gray-400 hover:text-[#00aced] transition duration-200"></i></a>
@@ -485,6 +530,8 @@ body::-webkit-scrollbar-thumb {
     </footer>
 </div>
  
+
+<script src="app.js"></script>
 </body>
 
 
